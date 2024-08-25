@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes blink {
+  0% {
+    color: rgb(226, 175, 226); /* White */
+  }
+  25% {
+    color: #f87171; /* Red */
+  }
+  50% {
+    color: #0cc983; /* Green */
+  }
+  75% {
+    color: #ffff; /* Blue */
+  }
+  100% {
+    color: #fbbf24; /* Yellow */
+  }
+}
+
+.animate-blink {
+  animation: blink 5s linear infinite;
+}
